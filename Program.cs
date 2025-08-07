@@ -20,20 +20,20 @@ public class Videojuego
     // Bucle principal del juego
     public static void Main(string[] args)
     {
-        Console.WriteLine("¡Bienvenido al juego!");
+        Console.WriteLine("¡Bienvenido al juego guererro!");
 
         while (!juegoTerminado)
         {
             MostrarMenuPrincipal();
         }
 
-        Console.WriteLine("Saliendo del juego. ¡Hasta la proxima!");
+        Console.WriteLine("Saliendo del juego. ¡Hasta la proxima heroe!");
     }
 
     // Comienza el juego
     static void MostrarEstatusJugador()
     {
-        Console.WriteLine("Status del Guerrero");
+        Console.WriteLine("Este es el status de Hercules");
         Console.WriteLine($"Nivel: {nivelHercules}");
         Console.WriteLine($"Experiencia: {experienciaHercules} / {LIMITE_EXPERIENCIA_NIVEL_UP}");
         Console.WriteLine($"Vida: {vidaHercules} / {vidaMaximaHercules}"); // Mostrara la vida actual y maxima
@@ -44,9 +44,9 @@ public class Videojuego
     static void MostrarMenuPrincipal()
     {
         Console.WriteLine("\n--- MENU PRINCIPAL ---");
-        Console.WriteLine("1. Iniciar batalla");
-        Console.WriteLine("2. Conocer el status");
-        Console.WriteLine("3. Entrenar resistencia"); 
+        Console.WriteLine("1. Que comience la batalla");
+        Console.WriteLine("2. Conoce tu status");
+        Console.WriteLine("3. Entrena la resistencia"); 
         Console.WriteLine("4. Salir del Juego");
         Console.Write("Selecciona una opcion: ");
 
@@ -68,7 +68,7 @@ public class Videojuego
                     juegoTerminado = true;
                     break;
                 default:
-                    Console.WriteLine("Opcion no valida. Intente nuevamente");
+                    Console.WriteLine("Opcion no valida. Intenta nuevamente");
                     break;
             }
         }
@@ -222,4 +222,3 @@ public class Videojuego
         }
     }
 }
-
