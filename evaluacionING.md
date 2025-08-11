@@ -1,92 +1,22 @@
-# 🛡️ Hoja de Observación - Prueba cruzada de guerreros
+# 🛡️ Evaluación y retroalimentación de la docente
 
-**Nombre del equipo que prueba:** ___________________________  
-**Nombre del equipo dueño del código:** _____________________  
-**Fecha:** ___________________
+**Fecha:** 10/08
 
----
+## Rúbrica de evaluación
 
-## 1. Datos generales del guerrero evaluado
+| **Criterio**| **Excelente (100%)**| **Bueno (80%)**| **Suficiente (60%)**| **Insuficiente (0-40%)**| **Peso** |
+| -- | -- | -- | -- | -- | -- |
+| **Funcionalidad general del programa**                      | El programa corre sin errores, cumple todas las instrucciones, es completamente jugable y permite terminarlo sin bloqueos. | El programa corre con pequeños errores no críticos, cumple casi todas las instrucciones.   ✅          | El programa corre con varios errores que dificultan su uso, faltan varias instrucciones. | El programa no corre o está incompleto, incumple la mayoría de las instrucciones. | **20%**  |
+| **Menú interactivo y control del flujo**                    | Menú claro y funcional usando `switch`, se repite hasta que el usuario elige salir, opciones bien identificadas.    ✅       | Menú funcional pero con pequeños problemas de claridad o repetición.                                 | Menú incompleto o confuso, repite pero con errores.                                      | Menú inexistente o no funcional.                                                  | **10%**  |
+| **Funciones por actividad**                                 | Cada actividad está implementada en una función independiente, con nombres claros y código reutilizable.     ✅              | La mayoría de las actividades están en funciones, pero algunas están en el `main` o mal organizadas. | Pocas actividades en funciones, nombres poco claros.                                     | No hay uso de funciones.                                                          | **15%**  |
+| **Uso de operadores aritméticos, lógicos y de comparación** | Se usan correctamente en varias partes del código y cumplen el propósito del juego.        ✅                                | Se usan, pero de forma limitada o repetitiva.                                                        | Uso mínimo y poco justificado.                                                           | No se usan o están mal aplicados.                                                 | **10%**  |
+| **Condiciones y validaciones**                              | Incluye condiciones para subir de nivel, agotarse, perder peleas y validaciones por energía y límites de horas.      ✅      | Incluye la mayoría de las condiciones y validaciones necesarias.                                     | Incluye pocas condiciones y validaciones, con fallos importantes.                        | No hay condiciones ni validaciones funcionales.                                   | **15%**  |
+| **Estructuras de control (`if`, `for`, `do-while`, etc.)**  | Se usan correctamente las cuatro estructuras, aplicadas en el flujo del juego.  **100%**                                   | Se usan tres estructuras, pero de forma repetitiva o poco optimizada.  **75%**                       | Uso excesivo de if, solo se usan dos estructuras de control.  **50%**     ✅               | Están mal aplicadas.   **25%**                                                    | **10%**  |
+| **Interactividad y diversión**                              | El juego es creativo, tiene narrativa y elementos que lo hacen entretenido.     ✅                                           | El juego es funcional pero poco creativo.                                                            | El juego es simple y mecánico, sin elementos extra.                                      | El juego es aburrido o incomprensible.                                            | **10%**  |
+| **Claridad y organización del código**                      | Código ordenado, con indentación, comentarios claros y nombres significativos para variables y funciones.      ✅            | Código mayormente ordenado, con algunos errores menores en indentación o comentarios.                | Código algo desordenado, difícil de leer.                                                | Código caótico y sin comentarios.                                                 | **10%**  |
 
-| Atributo        | Valor |
-|-----------------|-------|
-| Nombre del guerrero |       |
-| Vida base       |       |
-| Ataque base     |       |
-| Defensa base    |       |
-| Velocidad       |       |
-
----
-
-## 2. Pruebas de combate con enemigos personalizados
-
-Prueba el guerrero con enemigos que tengan distintos niveles de fuerza, vida y velocidad.
-
-| Enemigo # | Vida | Ataque | Velocidad | ¿Ganó el guerrero? | Observaciones |
-|-----------|------|--------|-----------|---------------------|----------------|
-| 1         |      |        |           |                     |                |
-| 2         |      |        |           |                     |                |
-| 3         |      |        |           |                     |                |
-| 4         |      |        |           |                     |                |
-| 5         |      |        |           |                     |                |
-
----
-
-## 3. Evaluación del sistema de entrenamiento
-
-### A. Entrenar fuerza
-
-- ¿Aumenta la fuerza después de entrenar? ✅ / ❌  
-- ¿Consume energía de forma proporcional a las horas? ✅ / ❌  
-- ¿El entrenamiento respeta el límite de 6 horas? ✅ / ❌  
-- Observaciones:  
-  _Escribe aquí..._
-
-### B. Entrenar resistencia
-
-- ¿Aumenta la resistencia? ✅ / ❌  
-- ¿Afecta otras estadísticas? (por ejemplo, menos energía) ✅ / ❌  
-- ¿Tiene sentido el impacto por hora entrenada? ✅ / ❌  
-- Observaciones:  
-  _Escribe aquí..._
-
-### C. Dormir / Descansar
-
-- ¿Recupera energía al descansar? ✅ / ❌  
-- ¿Se evita sobrecargar la energía (por ejemplo, pasar de 100)? ✅ / ❌  
-- Observaciones:  
-  _Escribe aquí..._
-
----
-
-## 4. Progresión y balance
-
-- ¿El personaje sube de nivel correctamente con la experiencia acumulada? ✅ / ❌  
-- ¿Se siente balanceado el avance del personaje? ✅ / ❌  
-- ¿Hay consecuencias claras si no tiene energía (por ejemplo, no puede entrenar)? ✅ / ❌  
-- Observaciones:  
-  _Escribe aquí..._
-
----
-
-## 5. Revisión de requisitos técnicos del código
-
-| Requisito                                                        | Cumple ✅ / ❌ | Comentarios |
-|------------------------------------------------------------------|---------------|-------------|
-| Menú interactivo con `switch` que se repite                     |               |             |
-| Al menos una función por actividad (Ej: `EntrenarFuerza()`)     |               |             |
-| Uso de operadores aritméticos, lógicos y de comparación         |               |             |
-| Condiciones para subir de nivel, agotarse o perder una batalla |               |             |
-| Validaciones de energía y límites                               |               |             |
-| Decisión del usuario sobre cuántas horas invertir por acción   |               |             |
-| Uso de estructuras de control (`if`, `for`, `do-while`, etc.)   |               |             |
-
----
-
-## 6. Retroalimentación general
-
-_Escribe aquí recomendaciones, mejoras o errores encontrados en la lógica del juego o en la estructura del código._  
-
--  
--  
--
+## Retroalimentación general
+ 
+- Faltó usar estructuras de control: `do-while`, y `for`.  
+- Dentro de tu programa tienes variables como `tiempoRecuperación` que podrías revisar su uso.
+- Muy buen trabajo en general.
